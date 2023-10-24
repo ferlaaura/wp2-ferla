@@ -31,10 +31,15 @@
 </tr>
 <tr>
     <td>Pekerjaan</td>
-    <td>
-        <input type="type" name="pekerjaan" value="<?php echo $u->pekerjaan ?>"></td>
+    <td><input type="text" name="pekerjaan" value="<?php echo $u->pekerjaan ?>"></td>
 </tr>
 <tr>
+    <td>Upload Foto</td>
+    <td><img src="<?php echo base_url();?><?php echo $u->foto ?>" width="50" height"50"></td>
+    <td><input type="file" name="foto"></td>
+</tr>
+<tr>
+
     <td></td>
     <td><input type="submit" value="update"> <?php echo anchor('kampus','<input type=button value=kembali>') ; ?></td>
 </tr>

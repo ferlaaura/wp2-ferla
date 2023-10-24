@@ -14,9 +14,9 @@
       <td>Nama</td>
       <td>Alamat</td>
       <td>Pekerjaan</td>
+      <th>Foto</th>
       <td>Action</td>
     </tr>
-
     <?php
     $no = 1;
     foreach($mahasiswa as $u){
@@ -27,6 +27,7 @@
       <td><?php echo $u->nama ?></td>
       <td><?php echo $u->alamat ?></td>
       <td><?php echo $u->pekerjaan ?></td>
+      <td><img src="<?php echo base_url();?><?php echo $u->foto ?>"width="50" height="50"></td>
       <td>
             <?php echo anchor('kampus/edit/'.$u->id,'Edit'); ?>
             <?php echo anchor('kampus/hapus/'.$u->id,'Hapus');?>
